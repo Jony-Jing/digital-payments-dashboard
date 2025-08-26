@@ -100,7 +100,7 @@ Clone this repository:
 ```bash
 git clone https://github.com/Jony-Jing/digital-payments-dashboard.git
 cd digital-payments-dashboard
-
+```
 Install dependencies:
 pip install -r requirements.txt
 
