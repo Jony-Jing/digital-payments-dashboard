@@ -121,7 +121,7 @@ From a portfolio perspective, this project highlights skills in **data wrangling
 **Jony Jing**  
 💼 Data Management & Analytics (Master’s)  
 📧 Email: `jonyjing0620@gmail.com`  
-🌐 Portfolio: [To-My-Portfolio](datascienceportfol.io/jonyjing)  
+🌐 Portfolio: [To-My-Portfolio](https://datascienceportfol.io/jonyjing)  
 
 ---
 
