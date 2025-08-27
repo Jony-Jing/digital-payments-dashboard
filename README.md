@@ -1,132 +1,133 @@
-🏦 Digital Payments Dashboard
+# 🏦 Digital Payments in Malaysia – Tableau Dashboard  
 
-An interactive Streamlit dashboard analyzing and visualizing digital payment trends in Malaysia.
-This project leverages data published by Bank Negara Malaysia (BNM) to understand cashless adoption,
-transaction growth, and infrastructure readiness across the country.
+An interactive Tableau dashboard analyzing and visualizing **digital payment adoption trends in Malaysia**.  
+This project leverages data published by **Bank Negara Malaysia (BNM) Payment Statistics** to understand:  
+- Cashless adoption  
+- Growth in transaction volume & value  
+- Infrastructure readiness (POS terminals & ATMs)  
 
-🔗 Live Demo: Coming Soon
-📊 Data Source: Bank Negara Malaysia - Payment Statistics
+🔗 **Live Tableau Dashboard**: [View on Tableau Public](https://public.tableau.com/views/DigitalPaymentsAdoptioninMalaysiaBNMData/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
+📊 **Data Source**: [Bank Negara Malaysia – Payment Statistics](https://www.bnm.gov.my/payment-statistics)  
 
-🚀 Features
+---
 
-✅ Modern dark-themed dashboard
-✅ Interactive year filtering
-✅ KPIs for key insights at a glance
-✅ Clean visualizations using Plotly & Matplotlib
-✅ Professional, minimal, and user-friendly design
+## 🚀 Features  
 
-📊 Data Overview
+- ✅ Tableau interactive dashboard (*3 sections: Overview, Instruments, Infrastructure*)  
+- ✅ Year & instrument filters for dynamic analysis  
+- ✅ KPIs for e-payments per capita, POS density, and transaction insights  
+- ✅ Clear, professional visual storytelling suitable for portfolio presentation  
 
-The dashboard uses processed datasets derived from Bank Negara Malaysia's Payment Statistics:
+---
 
-T1 → E-payments per capita (BNM Table 7.1)
+## 📊 Data Overview  
 
-T2 → Total transaction volume & value (BNM Table 7.2)
+The dashboard uses datasets derived from **Bank Negara Malaysia’s Payment Statistics**:  
 
-T5 → POS & ATM terminals per 1,000 population (BNM Table 7.5)
+- **T1 →** E-payments per capita (BNM Table 7.1)  
+- **T2 →** Transaction volume & value by instrument (BNM Table 7.2)  
+- **T5 →** POS & ATM terminals per 1,000 population (BNM Table 7.5)  
 
-📌 Data Source:
-Bank Negara Malaysia. (2025). Payment Statistics. Retrieved from
-https://www.bnm.gov.my/payment-statistics
+📌 **Reference:**  
+Bank Negara Malaysia. (2025). *Payment Statistics*. Retrieved from  
+👉 [https://www.bnm.gov.my/payment-statistics](https://www.bnm.gov.my/payment-statistics)  
 
-📈 Insights & Key Findings
+---
 
-After analyzing the data, here are some key insights:
+## 📈 Insights & Key Findings  
 
-📌 Cashless adoption is accelerating — E-payments per capita grew significantly between 2021 and 2023.
+- 📌 **Cashless adoption is accelerating** — E-payments per capita grew significantly between 2021 and 2023.  
+- 📌 **POS terminal density is improving** — Terminals per 1,000 people increased steadily, supporting Malaysia’s cashless economy goals.  
+- 📌 **ATM usage is declining** — A sign of the transition away from cash reliance.  
+- 📌 **COVID-19 impact** — A visible spike in digital payments adoption after the pandemic years.  
 
-📌 POS terminal density is improving — The number of POS terminals per 1,000 people increased steadily, supporting Malaysia’s cashless economy goals.
+➡️ These findings highlight **Malaysia’s rapid shift towards a cashless economy**, creating opportunities for **fintech innovation and digital financial services**.  
 
-📌 ATM usage is declining — Reflecting a shift towards digital-first payments.
+---
 
-📌 COVID-19 accelerated digital payments — There's a visible spike in adoption right after the pandemic years.
+## 🧠 Techniques & Cool Features Used  
 
-These findings highlight Malaysia’s rapid shift towards a cashless economy, creating opportunities for fintech innovation and digital financial services.
+### 🔹 Data Processing (Python + Pandas)  
+- Cleaned and standardized datasets with inconsistent year ranges  
+- Unified column naming conventions for merging  
+- Converted monetary units (RM millions → RM)  
+- Reshaped transaction data (wide → long format)  
 
-🧠 Techniques & Cool Features Used
+### 🔹 Visualization & Dashboard (Tableau)  
+- KPI cards for headline insights  
+- Stacked area charts to show instrument share over time  
+- Line charts for e-payments per capita & POS/ATM density  
+- Bar charts for average transaction size by instrument  
+- Interactive filters (year)  
 
-Some techniques and optimizations applied in this project:
+### 🔹 Portfolio Enhancements  
+- Published Tableau dashboard to **Tableau Public** for easy sharing  
+- Designed clean, minimal layout with focus on **storytelling through data**  
 
-Data Cleaning & Transformation
+---
 
-Standardized datasets with inconsistent year ranges
+## 🛠️ Challenges Faced  
 
-Unified naming conventions for consistent filtering
+- 🔹 **Inconsistent Year Ranges**  
+  - Each dataset (T1, T2, T5) covered slightly different time spans  
+  - Solved via Python preprocessing to align years before loading into Tableau  
 
-Interactive Dashboard Design
+- 🔹 **Multiple Metrics with Different Scales**  
+  - Volume, value, and infrastructure metrics varied widely  
+  - Solved by separating into dedicated dashboard sections with tailored visualizations  
 
-Used Streamlit for fast UI prototyping
+---
 
-Dynamic filtering with synchronized KPIs and charts
+## 📌 Tech Stack  
 
-Advanced Visualization
+- **Data Processing:** Python, Pandas, NumPy  
+- **Visualization & Dashboard:** Tableau  
+- **Version Control:** Git, GitHub  
 
-Built hover-enabled, animated Plotly graphs
+---
 
-Added modern dark-theme styling for professional aesthetics
+## 📸 Screenshots  
 
-Custom Year Synchronization
+![alt text](image.png) 
 
-Automatically detects common year ranges across datasets
+---
 
-Greys-out missing data in charts for better user clarity
+## ✅ Conclusion  
 
-🛠️ Challenges Faced
+This project demonstrates how **open central bank data** can be transformed into a clear, interactive dashboard that tracks **digital payments adoption in Malaysia**.  
 
-During development, I encountered and solved several challenges:
+Key conclusions:  
+- E-payments per capita are rising fast, signaling consumer adoption.  
+- ATM reliance is shrinking, reinforcing the **cashless economy trend**.  
+- POS infrastructure is expanding, supporting nationwide accessibility.  
 
-🔹 Inconsistent Year Ranges
+From a portfolio perspective, this project highlights skills in **data wrangling, KPI design, and Tableau storytelling**, as well as the ability to translate raw financial statistics into **insightful, decision-ready dashboards**.  
 
-Different datasets (T1, T2, T5) had mismatched year coverage
+---
 
-Solved by creating common year synchronization to ensure consistent filtering
+## 🌍 How to View the Dashboard  
 
-🔹 Multiple Metrics with Different Scales
+1. Open the live Tableau Public link:  
+   👉 [View Dashboard](https://public.tableau.com/views/DigitalPaymentsAdoptioninMalaysiaBNMData/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
+2. Navigate across the **three sections**:  
+   - **Overview** → Headline KPIs & overall trends  
+   - **Instruments** → Payment methods adoption & average transaction sizes  
+   - **Infrastructure** → POS/ATM availability per 1,000 inhabitants  
 
-Transaction counts, POS density, and ATM numbers vary greatly
+---
 
-Solved by designing separate KPI cards and scalable visualizations
+## 👨‍💻 Author  
 
-🔹 Making It Portfolio-Ready
+**Jony Jing**  
+💼 Data Management & Analytics (Master’s)  
+📧 Email: `jonyjing0620@gmail.com`  
+🌐 Portfolio: [To-My-Portfolio](datascienceportfol.io/jonyjing)  
 
-Ensured dashboard is clean, interactive, and non-overwhelming
+---
 
-Added subtle hover animations for a polished UX
-
-## 🛠️ Installation
-
-Clone this repository:
-
+✦ Copy-paste friendly repo clone command:  
 ```bash
-https://github.com/Jony-Jing/digital-payments-dashboard.git
+git clone https://github.com/Jony-Jing/digital-payments-dashboard.git
 ```
-Install dependencies:
-```
-pip install -r requirements.txt
-```
-```
-streamlit run dashboard.py
-```
-🌍 Deployment
 
-This dashboard is deployed via Streamlit Community Cloud for public access.
-Check it out live here: Live Demo
-
-📌 Tech Stack
-
-Language: Python
-
-Framework: Streamlit
-
-Data Viz: Plotly, Matplotlib, Seaborn
-
-Data Processing: Pandas, NumPy
-```
-📸 Screenshots
-```
-👨‍💻 Author:
-Jony Jing
-💼 Data Management & Analytics (Master’s)
-📧 Contact: jonyjing0620@gmail.com
-
-🌐 Portfolio: your-portfolio-link.com
+---
