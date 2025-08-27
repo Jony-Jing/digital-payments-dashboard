@@ -98,14 +98,15 @@ Added subtle hover animations for a polished UX
 Clone this repository:
 
 ```bash
-git clone https://github.com/Jony-Jing/digital-payments-dashboard.git
-cd digital-payments-dashboard
-
+https://github.com/Jony-Jing/digital-payments-dashboard.git
+```
 Install dependencies:
+```
 pip install -r requirements.txt
-
+```
+```
 streamlit run dashboard.py
-
+```
 🌍 Deployment
 
 This dashboard is deployed via Streamlit Community Cloud for public access.
@@ -120,11 +121,10 @@ Framework: Streamlit
 Data Viz: Plotly, Matplotlib, Seaborn
 
 Data Processing: Pandas, NumPy
-
+```
 📸 Screenshots
-
+```
 👨‍💻 Author:
-
 Jony Jing
 💼 Data Management & Analytics (Master’s)
 📧 Contact: jonyjing0620@gmail.com
